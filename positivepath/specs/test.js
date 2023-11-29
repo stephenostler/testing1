@@ -11,3 +11,19 @@ describe('My Login application', () => {
     })
 })
 
+describe('My Login application', () => {
+    it('should login with valid credentials', async () => {
+        await LoginPage.open()
+
+        await LoginPage.login('problem_user', 'secret_sauce')
+        await expect(loginPage.pagecheck).toBeExisting()
+    })
+})
+describe('My Login application', () => {
+    it('should not login', async () => {
+        await LoginPage.open()
+
+        await LoginPage.login('sstandardhue', 'secret_sauce')
+        await expect(loginPage.badlogin).toBeExisting()
+    })
+})
