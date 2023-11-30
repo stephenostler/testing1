@@ -2,6 +2,7 @@ const { expect } = require('@wdio/globals')
 const LoginPage = require('../pageobjects/login.page')
 const loginPage = require('../pageobjects/login.page')
 const addCart = require('../pageobjects/addtocart.js')
+const checkout = require('../pageobjects/checkout.js')
 
 describe('My Login application', () => {
     it('should not login', async () => {
@@ -26,4 +27,11 @@ describe('Adding shirt to cart ', () => {
         await addCart.open()
         await expect(addCart.btnCheck).toBeExisting()
     })
+})
+describe('Checking out ', () => {
+        it('allow user to checkout ', async () => {
+            await checkout.open()
+            await expect(checkout.butcheck2).toBeExisting()
+        })
+
 })
