@@ -22,12 +22,6 @@ exports.config = {
     // will be called from there.
     //
     specs: [
-        [
-            '.logintest/specs/test.js',
-            '.carttest/specs/test.js',
-            '.checkout/specs/test.js',
-            '.logouttest/specs/test.js'
-        ]
         
         // ToDo: define location for spec files here
     ],
