@@ -22,7 +22,6 @@ exports.config = {
     // will be called from there.
     //
     specs: [
-        
         // ToDo: define location for spec files here
     ],
     // Patterns to exclude.
